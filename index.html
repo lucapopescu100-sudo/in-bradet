@@ -1,116 +1,157 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Punct Gastronomic Local În Brădet</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punct Gastronomic Local În Brădet</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-  <img src="images/logo.jpg" alt="În Brădet">
-  <div>
-    <a href="#">Acasă</a>
-    <a href="#despre">Despre noi</a>
-    <a href="#meniu">Meniu</a>
-    <a href="#contact">Contact</a>
-  </div>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="Logo">
+    </div>
+
+    <ul>
+        <li><a href="#">Acasă</a></li>
+        <li><a href="#despre">Despre noi</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#meniu">Meniu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
-<header>
-  <div class="hero-content">
-    <h1>În Brădet</h1>
-    <p>Gust autentic de munte, produse din gospodărie proprie și bucate gătite ca odinioară.</p>
-    <a href="#meniu" class="button">Vezi meniul</a>
-    <a href="#contact" class="button secondary">Rezervă o masă</a>
-  </div>
+<header class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>În Brădet</h1>
+
+        <p>
+            Gust autentic de munte, produse din gospodăria proprie și
+            preparate tradiționale gătite cu drag.
+        </p>
+
+        <a href="#meniu" class="btn">Vezi meniul</a>
+    </div>
 </header>
 
-<section class="about" id="despre">
-  <div class="about-text">
-    <h2>Povestea noastră</h2>
-    <p>
-      La <strong>Punctul Gastronomic Local În Brădet</strong>, pregătim mâncăruri
-      tradiționale românești cu ingrediente locale, produse din gospodăria proprie
-      și rețete făcute cu răbdare.
-    </p>
-    <p>
-      Aici, mâncarea se gătește la ceaun, natura îți oferă liniște, iar fiecare
-      masă are gustul autentic al muntelui.
-    </p>
-  </div>
+<section id="despre" class="about">
 
-  <img src="images/terasa.jpg" alt="Terasa În Brădet">
+<div class="text">
+
+<h2>Povestea noastră</h2>
+
+<p>
+La Punctul Gastronomic Local În Brădet vă așteptăm cu preparate
+tradiționale românești, gătite din ingrediente locale și produse
+din propria gospodărie.
+</p>
+
+<p>
+Atmosfera liniștită, natura și ospitalitatea sunt ingredientele
+care completează fiecare masă.
+</p>
+
+</div>
+
+<div class="image">
+<img src="images/terasa.jpg" alt="Terasa">
+</div>
+
 </section>
 
-<section class="values">
-  <h2>Ce găsești la noi</h2>
+<section class="features">
 
-  <div class="values-grid">
-    <div>🐄 <span>Produse proprii</span></div>
-    <div>🔥 <span>Gătit la ceaun</span></div>
-    <div>🌲 <span>Priveliște de munte</span></div>
-    <div>❤️ <span>Atmosferă de familie</span></div>
-  </div>
+<div class="card">🐄<br>Produse proprii</div>
+
+<div class="card">🔥<br>Gătit la ceaun</div>
+
+<div class="card">🌲<br>Priveliște de munte</div>
+
+<div class="card">❤️<br>Atmosferă de familie</div>
+
 </section>
 
-<section class="photo-section">
-  <img src="images/vaci.jpg" alt="Vaci pe pășune">
-  <img src="images/ceaun.jpg" alt="Ceaun tradițional">
-  <img src="images/foisor.jpg" alt="Foișor">
+<section id="galerie">
+
+<h2>Galerie</h2>
+
+<div class="gallery">
+
+<img src="images/vaci.jpg">
+
+<img src="images/ceaun.jpg">
+
+<img src="images/foisor.jpg">
+
+<img src="images/panorama2.jpg">
+
+<img src="images/panorama3.jpg">
+
+</div>
+
 </section>
 
-<section class="menu" id="meniu">
-  <h2>Meniul casei</h2>
+<section id="meniu">
 
-  <div class="menu-grid">
-    <div class="menu-card">
-      <img src="images/gulas.jpg" alt="Gulaș">
-      <h3>Gulaș</h3>
-    </div>
+<h2>Meniul Casei</h2>
 
-    <div class="menu-card">
-      <img src="images/pastrav.jpg" alt="Păstrăv cu mămăligă">
-      <h3>Păstrăv cu mămăligă</h3>
-    </div>
+<div class="menu">
 
-    <div class="menu-card">
-      <img src="images/sarmale.jpg" alt="Sarmale">
-      <h3>Sarmale cu mămăligă</h3>
-    </div>
+<div class="food">
+<img src="images/gulas.jpg">
+<h3>Gulaș</h3>
+</div>
 
-    <div class="menu-card">
-      <img src="images/mamaliga.jpg" alt="Mămăligă cu brânză și smântână">
-      <h3>Mămăligă cu brânză și smântână</h3>
-    </div>
+<div class="food">
+<img src="images/pastrav.jpg">
+<h3>Păstrăv cu mămăligă</h3>
+</div>
 
-    <div class="menu-card">
-      <img src="images/carnati.jpg" alt="Cârnați de casă">
-      <h3>Cârnați de casă</h3>
-    </div>
+<div class="food">
+<img src="images/sarmale.jpg">
+<h3>Sarmale</h3>
+</div>
 
-    <div class="menu-card">
-      <img src="images/desert.jpg" alt="Desert de casă">
-      <h3>Desert de casă</h3>
-    </div>
-  </div>
+<div class="food">
+<img src="images/mamaliga.jpg">
+<h3>Mămăligă cu brânză și smântână</h3>
+</div>
+
+<div class="food">
+<img src="images/carnati.jpg">
+<h3>Cârnați de casă</h3>
+</div>
+
+<div class="food">
+<img src="images/desert.jpg">
+<h3>Desert de casă</h3>
+</div>
+
+</div>
+
 </section>
 
-<section class="contact" id="contact">
-  <h2>Contact</h2>
+<section id="contact">
 
-  <p><b>📍 Adresă:</b><br>Strada Brădet 34, Mălaia, Vâlcea</p>
-  <p><b>📞 Telefon:</b><br><a href="tel:0753052656">0753 052 656</a></p>
-  <p><b>✉ Email:</b><br><a href="mailto:cosminpopescu303@gmail.com">cosminpopescu303@gmail.com</a></p>
-  <p><b>Facebook:</b><br>Punct Gastronomic Local În Brădet</p>
+<h2>Contact</h2>
+
+<p><b>📍</b> Strada Brădet 34, Mălaia, Vâlcea</p>
+
+<p><b>📞</b> 0753 052 656</p>
+
+<p><b>✉</b> cosminpopescu303@gmail.com</p>
+
 </section>
 
 <footer>
-  © 2026 Punct Gastronomic Local În Brădet
+
+© 2026 Punct Gastronomic Local În Brădet
+
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

@@ -1,1 +1,93 @@
-body{font-family:Arial,sans-serif;margin:0;background:#f8f4ec;color:#333}header{background:#2f5d3a;color:#fff;padding:40px;text-align:center}main{max-width:900px;margin:auto;padding:20px}h2{color:#2f5d3a}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punct Gastronomic Local „În Brădet”</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>Punct Gastronomic Local</h1>
+        <h2>„În Brădet”</h2>
+        <p>Gust autentic • Natură • Tradiție</p>
+
+        <a class="button" href="tel:0753052656">📞 Rezervă o masă</a>
+    </div>
+</header>
+
+<section class="about">
+
+<h2>Bine ați venit!</h2>
+
+<p>
+La <strong>Punctul Gastronomic Local „În Brădet”</strong> vă așteptăm
+cu preparate tradiționale românești pregătite la ceaun,
+din ingrediente locale și după rețete moștenite din generație în generație.
+</p>
+
+<p>
+Ne dorim ca fiecare vizitator să se bucure de ospitalitatea locului,
+de liniștea naturii și de gustul autentic al bucătăriei românești.
+</p>
+
+</section>
+
+<section class="menu">
+
+<h2>Ce puteți servi</h2>
+
+<div class="cards">
+
+<div class="card">
+🍲
+<h3>Preparate la ceaun</h3>
+<p>Tocănițe, gulaș și alte specialități.</p>
+</div>
+
+<div class="card">
+🐟
+<h3>Pește</h3>
+<p>Preparat după rețete locale.</p>
+</div>
+
+<div class="card">
+🥧
+<h3>Deserturi de casă</h3>
+<p>Pregătite cu ingrediente naturale.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>📍 Strada Brădet nr.34, Mălaia, Vâlcea</p>
+
+<p>📞 0753 052 656</p>
+
+<p>✉️ cosminpopescu303@gmail.com</p>
+
+<p>
+<a href="https://facebook.com">
+Facebook - Punct Gastronomic Local „În Brădet”
+</a>
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Punct Gastronomic Local „În Brădet”</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

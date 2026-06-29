@@ -1,0 +1,1 @@
+Pune fotografiile in folderul images.

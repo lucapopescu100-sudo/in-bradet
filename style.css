@@ -1,93 +1,249 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Punct Gastronomic Local În Brădet</title>
-<link rel="stylesheet" href="style.css">
-</head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-<body>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f5ef;
+    color:#2b2b2b;
+}
 
-<nav>
-  <a href="#">Acasă</a>
-  <a href="#despre">Despre noi</a>
-  <a href="#meniu">Meniu</a>
-  <a href="#contact">Contact</a>
-</nav>
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,.75);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    z-index:1000;
+}
 
-<header>
-  <div class="container">
-    <h1>Punct Gastronomic Local</h1>
-    <h2>În Brădet</h2>
-    <p>Gust autentic • Bucate tradiționale • Natură</p>
-    <a href="#contact" class="button">Rezervă o masă</a>
-  </div>
-</header>
+nav img{
+    width:70px;
+    border-radius:50%;
+}
 
-<section class="about" id="despre">
-  <h2>Bine ați venit!</h2>
-  <p>
-    La <strong>Punctul Gastronomic Local În Brădet</strong>,
-    pregătim mâncăruri tradiționale românești folosind ingrediente locale,
-    rețete moștenite și multă pasiune.
-  </p>
-  <p>
-    Ne dorim ca fiecare oaspete să se bucure de liniștea naturii,
-    ospitalitatea gazdelor și gustul autentic al preparatelor gătite la ceaun.
-  </p>
-</section>
+nav div{
+    display:flex;
+    gap:25px;
+}
 
-<section class="menu" id="meniu">
-  <h2>Meniul Casei</h2>
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
 
-  <div class="menu-grid">
-    <div class="menu-card">
-      <h3>🍲 Ciorbe</h3>
-      <p>Ciorbe de toate felurile, pregătite proaspăt, în stil tradițional.</p>
-    </div>
+nav a:hover{
+    color:#d4b06a;
+}
 
-    <div class="menu-card">
-      <h3>🥘 Specialități</h3>
-      <p>Gulaș, ostropel de pui și carne la cuptor cu piure.</p>
-    </div>
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
 
-    <div class="menu-card">
-      <h3>🐟 Pește</h3>
-      <p>Pește cu mămăliguță, preparat după rețete locale.</p>
-    </div>
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
 
-    <div class="menu-card">
-      <h3>🧀 Tradițional</h3>
-      <p>Mămăliguță cu brânză și smântână.</p>
-    </div>
-  </div>
+.hero-content h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
 
-  <p class="info-menu">
-    Meniul poate varia în funcție de sezon și de ingredientele disponibile.
-  </p>
-</section>
+.hero-content p{
+    font-size:22px;
+    margin-bottom:35px;
+    line-height:1.6;
+}
 
-<section id="contact">
-  <h2>Contact</h2>
+.button{
+    display:inline-block;
+    background:#8b5a2b;
+    color:white;
+    padding:14px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    margin:10px;
+    transition:.3s;
+}
 
-  <p><b>📍 Adresă:</b><br>
-  Strada Brădet 34<br>
-  247335 Mălaia, Vâlcea</p>
+.button:hover{
+    background:#6b4320;
+}
 
-  <p><b>📞 Telefon:</b><br>
-  <a href="tel:0753052656">0753 052 656</a></p>
+.secondary{
+    background:#2d6b3c;
+}
 
-  <p><b>✉ Email:</b><br>
-  <a href="mailto:cosminpopescu303@gmail.com">cosminpopescu303@gmail.com</a></p>
+section{
+    padding:90px 10%;
+}
 
-  <p><b>Facebook:</b><br>
-  Punct Gastronomic Local În Brădet</p>
-</section>
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
 
-<footer>
-  © 2026 Punct Gastronomic Local În Brădet
-</footer>
+.about img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
 
-</body>
-</html>
+.about h2,
+.values h2,
+.menu h2,
+.contact h2{
+    font-size:40px;
+    margin-bottom:25px;
+    color:#4b2e19;
+}
+
+.about p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.values{
+    background:white;
+    text-align:center;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.values-grid div{
+    background:#f2eee8;
+    padding:30px;
+    border-radius:15px;
+    font-size:22px;
+}
+
+.values-grid span{
+    display:block;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.photo-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.photo-section img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.4s;
+}
+
+.photo-section img:hover{
+    transform:scale(1.05);
+}
+
+.menu{
+    background:#f4efe7;
+    text-align:center;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-card h3{
+    padding:20px;
+}
+
+.contact{
+    background:#2f5d34;
+    color:white;
+    text-align:center;
+}
+
+.contact a{
+    color:#ffd36b;
+    text-decoration:none;
+}
+
+footer{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.values-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.photo-section{
+grid-template-columns:1fr;
+}
+
+.menu-grid{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+font-size:45px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav div{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}

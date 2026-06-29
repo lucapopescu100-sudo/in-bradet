@@ -1,93 +1,110 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punct Gastronomic Local „În Brădet”</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<header class="hero">
-    <div class="overlay">
-        <h1>Punct Gastronomic Local</h1>
-        <h2>„În Brădet”</h2>
-        <p>Gust autentic • Natură • Tradiție</p>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f2e9;
+    color:#333;
+    line-height:1.7;
+}
 
-        <a class="button" href="tel:0753052656">📞 Rezervă o masă</a>
-    </div>
-</header>
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
 
-<section class="about">
+.overlay{
+    max-width:700px;
+    padding:20px;
+}
 
-<h2>Bine ați venit!</h2>
+.hero h1{
+    font-size:28px;
+}
 
-<p>
-La <strong>Punctul Gastronomic Local „În Brădet”</strong> vă așteptăm
-cu preparate tradiționale românești pregătite la ceaun,
-din ingrediente locale și după rețete moștenite din generație în generație.
-</p>
+.hero h2{
+    font-size:64px;
+    margin:15px 0;
+}
 
-<p>
-Ne dorim ca fiecare vizitator să se bucure de ospitalitatea locului,
-de liniștea naturii și de gustul autentic al bucătăriei românești.
-</p>
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
 
-</section>
+.button{
+    background:#2e7d32;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:20px;
+    transition:.3s;
+}
 
-<section class="menu">
+.button:hover{
+    background:#1b5e20;
+}
 
-<h2>Ce puteți servi</h2>
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
 
-<div class="cards">
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2e7d32;
+    font-size:38px;
+}
 
-<div class="card">
-🍲
-<h3>Preparate la ceaun</h3>
-<p>Tocănițe, gulaș și alte specialități.</p>
-</div>
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
 
-<div class="card">
-🐟
-<h3>Pește</h3>
-<p>Preparat după rețete locale.</p>
-</div>
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
 
-<div class="card">
-🥧
-<h3>Deserturi de casă</h3>
-<p>Pregătite cu ingrediente naturale.</p>
-</div>
+.card h3{
+    margin:15px 0;
+}
 
-</div>
+.contact{
+    text-align:center;
+}
 
-</section>
+.contact p{
+    margin:15px 0;
+    font-size:20px;
+}
 
-<section class="contact">
+.contact a{
+    color:#2e7d32;
+    text-decoration:none;
+}
 
-<h2>Contact</h2>
-
-<p>📍 Strada Brădet nr.34, Mălaia, Vâlcea</p>
-
-<p>📞 0753 052 656</p>
-
-<p>✉️ cosminpopescu303@gmail.com</p>
-
-<p>
-<a href="https://facebook.com">
-Facebook - Punct Gastronomic Local „În Brădet”
-</a>
-</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Punct Gastronomic Local „În Brădet”</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}

@@ -1,146 +1,93 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punct Gastronomic Local În Brădet</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-body{
-    font-family:Georgia,"Times New Roman",serif;
-    background:#f6f1e7;
-    color:#2d2418;
-    line-height:1.7;
-}
+<body>
 
-/* HERO */
+<nav>
+  <a href="#">Acasă</a>
+  <a href="#despre">Despre noi</a>
+  <a href="#meniu">Meniu</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-header{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(20,30,18,.60),rgba(20,30,18,.60)),
-    url("ceaun.jpg.png");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:30px;
-    color:white;
-}
+<header>
+  <div class="container">
+    <h1>Punct Gastronomic Local</h1>
+    <h2>În Brădet</h2>
+    <p>Gust autentic • Bucate tradiționale • Natură</p>
+    <a href="#contact" class="button">Rezervă o masă</a>
+  </div>
+</header>
 
-.container{
-    max-width:800px;
-    background:rgba(0,0,0,.35);
-    padding:45px;
-    border-radius:20px;
-}
+<section class="about" id="despre">
+  <h2>Bine ați venit!</h2>
+  <p>
+    La <strong>Punctul Gastronomic Local În Brădet</strong>,
+    pregătim mâncăruri tradiționale românești folosind ingrediente locale,
+    rețete moștenite și multă pasiune.
+  </p>
+  <p>
+    Ne dorim ca fiecare oaspete să se bucure de liniștea naturii,
+    ospitalitatea gazdelor și gustul autentic al preparatelor gătite la ceaun.
+  </p>
+</section>
 
-header h1{
-    font-size:30px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-}
+<section class="menu" id="meniu">
+  <h2>Meniul Casei</h2>
 
-header h2{
-    font-size:72px;
-    color:#f4d38a;
-    margin:15px 0;
-}
+  <div class="menu-grid">
+    <div class="menu-card">
+      <h3>🍲 Ciorbe</h3>
+      <p>Ciorbe de toate felurile, pregătite proaspăt, în stil tradițional.</p>
+    </div>
 
-header p{
-    font-size:24px;
-    margin-bottom:35px;
-}
+    <div class="menu-card">
+      <h3>🥘 Specialități</h3>
+      <p>Gulaș, ostropel de pui și carne la cuptor cu piure.</p>
+    </div>
 
-.button{
-    display:inline-block;
-    background:#6b3f1d;
-    color:white;
-    padding:15px 35px;
-    border-radius:40px;
-    text-decoration:none;
-    border:2px solid #f4d38a;
-    transition:.3s;
-}
+    <div class="menu-card">
+      <h3>🐟 Pește</h3>
+      <p>Pește cu mămăliguță, preparat după rețete locale.</p>
+    </div>
 
-.button:hover{
-    background:#4b2c14;
-}
+    <div class="menu-card">
+      <h3>🧀 Tradițional</h3>
+      <p>Mămăliguță cu brânză și smântână.</p>
+    </div>
+  </div>
 
-/* SECTIUNI */
+  <p class="info-menu">
+    Meniul poate varia în funcție de sezon și de ingredientele disponibile.
+  </p>
+</section>
 
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:80px 25px;
-}
+<section id="contact">
+  <h2>Contact</h2>
 
-h2{
-    text-align:center;
-    color:#31572c;
-    font-size:40px;
-    margin-bottom:30px;
-}
+  <p><b>📍 Adresă:</b><br>
+  Strada Brădet 34<br>
+  247335 Mălaia, Vâlcea</p>
 
-.about,
-.gallery,
-#contact{
-    text-align:center;
-    font-size:20px;
-}
+  <p><b>📞 Telefon:</b><br>
+  <a href="tel:0753052656">0753 052 656</a></p>
 
-.menu{
-    background:white;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.1);
-    margin-bottom:40px;
-}
+  <p><b>✉ Email:</b><br>
+  <a href="mailto:cosminpopescu303@gmail.com">cosminpopescu303@gmail.com</a></p>
 
-.menu ul{
-    list-style:none;
-    text-align:center;
-    font-size:22px;
-}
+  <p><b>Facebook:</b><br>
+  Punct Gastronomic Local În Brădet</p>
+</section>
 
-.menu li{
-    padding:10px 0;
-}
+<footer>
+  © 2026 Punct Gastronomic Local În Brădet
+</footer>
 
-a{
-    color:#31572c;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-footer{
-    background:#31572c;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-/* TELEFON */
-
-@media(max-width:768px){
-
-header h2{
-    font-size:46px;
-}
-
-header h1{
-    font-size:22px;
-}
-
-header p{
-    font-size:18px;
-}
-
-.container{
-    padding:25px;
-}
-
-section{
-    padding:60px 20px;
-}
-
-}
+</body>
+</html>
